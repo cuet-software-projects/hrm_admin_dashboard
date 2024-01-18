@@ -1,0 +1,10 @@
+.preview {
+  @apply w-[200px] h-[200px] bg-white-1;
+}
+.preview::before {
+  content: '';
+  @apply absolute top-0 right-0 w-0;
+  border-bottom: 40px solid rgba(0, 0, 0, 0.7);
+  border-right: 40px solid white;
+  border-radius: 0 0 0 4px;
+}

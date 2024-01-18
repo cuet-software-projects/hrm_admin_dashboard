@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+#profileButtonGroup::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-grad-1 bg-opacity-50;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-secondary-1 bg-opacity-50;
+}
+
+form::-webkit-scrollbar {
+  width: 0px;
+}
+
+@layer components {
+  /* Transparent background */
+  .bg-transparent {
+    background-color: transparent;
+  }
+  /* Default table style */
+  .default-table .ant-table-tbody td {
+    @apply p-3 text-center border-collapse border border-white-1 text-sm;
+  }
+  .default-table .ant-table-thead .ant-table-cell {
+    @apply p-3 h-16 bg-brand-grad-1 text-white-1 font-bold text-center;
+  }
+
+  .default-table tbody tr:nth-child(2n) > td {
+    @apply bg-[#fde5d2] border-collapse border border-white-1 text-black-1;
+  }
+  .default-table tbody tr:nth-child(2n-1) > td {
+    @apply bg-white-1 border-collapse border border-white-1 text-black-1;
+  }
+  .default-table .ant-table-cell .ant-typography-ellipsis-multiple-line {
+    margin-bottom: 0px !important;
+  }
+
+  .lgbase1 {
+    @apply flex rounded-md h-screen;
+  }
+
+  .lgbase2 {
+    @apply bg-secondary-2 w-full overflow-y-auto;
+  }
+
+  .lgbase3 {
+    @apply container px-16 py-28 space-y-10;
+  }
+
+  .stylishHeaderText {
+    @apply bg-clip-text bg-gradient-to-l from-brand-grad-1 to-brand-grad-2 font-semibold;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .buttonBorder {
+    @apply border-[1px] border-brand-grad-1 border-opacity-20;
+  }
+
+  .border {
+    @apply border-[1px] border-brand-grad-1 border-opacity-20;
+  }
+
+  .error {
+    @apply text-danger font-bold mt-2;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .profileHeader {
+    @apply flex items-center justify-between py-3 px-5 w-full bg-brand-grad-1 
+        bg-opacity-10 rounded-xl shadow-sm buttonBorder;
+  }
+
+  .stylishHeaderText {
+    @apply bg-clip-text bg-gradient-to-l from-brand-grad-1 to-brand-grad-2 font-semibold;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .disable-form-inputs > * {
+    pointer-events: none;
+  }
+
+  /* Disable default hover style of ant buttons */
+  .default-button-style:hover {
+    @apply border-[1px] border-brand-grad-1 border-opacity-20 text-white-1 !important;
+  }
+
+  /* Styling the dropdown item of table */
+  .table-dropdown-item {
+    @apply flex justify-start items-center space-x-5 font-semibold text-base border-b border-black-1 border-opacity-10 pb-2;
+  }
+
+  .ant-table-filter-dropdown-btns > .ant-btn-primary,
+  button [type='button'] {
+    @apply text-white-1 bg-[#1677ff] shadow !important;
+  }
+
+  /* Animations */
+  .glow {
+    animation: glow 1s infinite alternate;
+  }
+
+  /* Define the glow animation keyframes */
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 10px rgba(9, 255, 177, 0.831);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(66, 153, 225, 1);
+    }
+  }
+}

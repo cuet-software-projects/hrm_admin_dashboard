@@ -1,0 +1,13 @@
+/* Antd carousel next and prev arrow */
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+  @apply bg-black-1 rounded-full flex justify-center items-center text-white-1 font-bold text-lg w-10 h-10  z-10 !important;
+}
+.ant-carousel .slick-prev {
+  @apply left-2;
+}
+.ant-carousel .slick-next {
+  @apply right-2;
+}

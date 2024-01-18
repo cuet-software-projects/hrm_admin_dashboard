@@ -1,0 +1,26 @@
+.minimized {
+  @apply absolute bottom-0 right-8 w-[400px];
+}
+.minimized .notice-composer-header {
+  @apply bg-white-1 shadow-lg;
+}
+
+.minimized form,
+.minimized #notice-composer-footer div {
+  height: 0 !important;
+  overflow: hidden;
+}
+
+.maximized {
+  @apply absolute top-10 bottom-10 left-28 right-28 z-50 drop-shadow-2xl bg-white-1 rounded-lg;
+}
+
+.default {
+  @apply absolute z-50 right-5 bottom-0 shadow bg-white-1 rounded-lg w-[600px] h-[600px];
+}
+
+@media (max-width: 768px) {
+  .default {
+    @apply absolute z-50 inset-0 shadow bg-white-1 rounded-lg w-full h-full;
+  }
+}

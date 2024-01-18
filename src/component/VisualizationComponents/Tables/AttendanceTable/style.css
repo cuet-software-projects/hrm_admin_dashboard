@@ -1,0 +1,46 @@
+.ant-table-tbody > tr:hover {
+  cursor: pointer;
+}
+
+.ant-picker-panels .ant-picker-panel:last-child {
+  width: 0;
+}
+.ant-picker-panels .ant-picker-panel:last-child .ant-picker-header {
+  position: absolute;
+  right: 20px;
+}
+.ant-picker-panels
+  .ant-picker-panel:last-child
+  .ant-picker-header
+  .ant-picker-header-prev-btn,
+.ant-picker-panels
+  .ant-picker-panel:last-child
+  .ant-picker-header
+  .ant-picker-header-view {
+  visibility: hidden;
+}
+.ant-picker-panels .ant-picker-panel:last-child .ant-picker-body {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .ant-picker-panels .ant-picker-panel:last-child {
+    width: 280px !important;
+  }
+  .ant-picker-panels .ant-picker-panel:last-child .ant-picker-header {
+    position: relative;
+  }
+  .ant-picker-panels
+    .ant-picker-panel:last-child
+    .ant-picker-header
+    .ant-picker-header-prev-btn,
+  .ant-picker-panels
+    .ant-picker-panel:last-child
+    .ant-picker-header
+    .ant-picker-header-view {
+    visibility: initial;
+  }
+  .ant-picker-panels .ant-picker-panel:last-child .ant-picker-body {
+    display: block;
+  }
+}

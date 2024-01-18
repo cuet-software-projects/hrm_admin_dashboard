@@ -1,0 +1,77 @@
+/* Styling for the main menu */
+.ant-menu {
+  @apply text-white-1 text-base;
+}
+
+/* Styling for menu items */
+.ant-menu-item {
+  @apply mt-[10px] !important;
+}
+
+/* Styling for menu items and submenu titles */
+.ant-menu-item,
+.ant-menu-submenu-title {
+  padding: 30px 15px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px;
+}
+
+/* Styling for the selected menu item */
+.ant-menu-item-selected {
+  background-color: #cb3c23 !important;
+  padding: 30px 15px !important;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 10px;
+}
+
+/* Styling for the open submenu */
+.ant-menu-submenu-open {
+  background-color: #3a383c !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* Styling for submenu items */
+.ant-menu-submenu {
+  margin-top: 10px !important;
+}
+/* Styling for the submenu container */
+.ant-menu-sub {
+  background-color: #3a383c !important;
+}
+
+/* Styling for submenu items when submenu is open */
+.ant-menu-submenu-open .ant-menu-item {
+  width: 168px !important;
+  padding: 10px !important;
+}
+.ant-menu-submenu-open .ant-menu-item-selected {
+  background-color: #c0c5cb5e !important;
+}
+
+/* Styling for selected submenu items when submenu is open */
+.ant-menu-submenu-open > .ant-menu-submenu-title,
+.ant-menu-submenu-selected .ant-menu-submenu-title {
+  background-color: #cb3c23 !important;
+  color: white !important;
+}
+
+/* Styling for submenu titles when submenu is open or selected */
+.ant-menu-submenu-title {
+  position: relative !important;
+}
+
+/* Styling for submenu popup container */
+/* @media (max-width: 992px) {
+  .ant-menu-submenu-popup {
+    width: fit-content;
+    position: absolute !important;
+    left: auto !important;
+    bottom: 0 !important;
+  }
+} */

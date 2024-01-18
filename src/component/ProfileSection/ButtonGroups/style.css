@@ -1,0 +1,3 @@
+.default-button-style:hover {
+  @apply border-[1px] border-brand-grad-1 border-opacity-20 text-black-1 !important;
+}

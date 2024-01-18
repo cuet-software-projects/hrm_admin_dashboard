@@ -1,0 +1,6 @@
+.ant-breadcrumb ol li {
+  @apply flex items-center text-brand-grad-1 text-lg capitalize !important;
+}
+.ant-breadcrumb-link a {
+  @apply text-brand-grad-1 underline !important;
+}
